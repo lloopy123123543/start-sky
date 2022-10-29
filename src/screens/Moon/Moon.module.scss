@@ -1,8 +1,83 @@
 ._ {
     position: absolute;
-    top: 25%;
-    left: 25%;
-    transform: rotate(-45deg);
-    height: 72px;
-    width: 72px;
+    top: 35%;
+    left: 35%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    animation: moon infinite 10s;
+    display: flex;
+
+    align-items: center;
+
+
 }
+@keyframes moon {
+    0% {
+        transform: rotate(-40deg);        
+        
+    }
+
+    25% {
+
+
+        transform: rotate(-48deg);
+    }
+
+    50% {
+
+        transform: rotate(-40deg);
+    }
+
+    60% {
+
+
+        transform: rotate(-48deg);
+    }
+
+    100% {
+
+        transform: rotate(-40deg);
+    }
+
+}
+.light{
+    box-shadow: 5px 5px 70px 25px yellow;
+    top: 40%;
+    left: 43%;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    border-radius: 50%;
+    animation: light infinite 10s;
+
+    @keyframes light {
+        0% {
+            box-shadow: 1px 1px 70px 25px yellow;    
+            
+        }
+    
+        25% {
+    
+    
+            box-shadow: 5px 5px 70px 28px yellow;
+        }
+    
+        50% {
+    
+            box-shadow: -1px -1px 70px 25px yellow;
+        }
+    
+        60% {
+    
+    
+            box-shadow: 5px 5px 70px 15px yellow;
+        }
+    
+        100% {
+            box-shadow: 1px 1px 70px 25px yellow;
+        }
+    
+    }
+}
+

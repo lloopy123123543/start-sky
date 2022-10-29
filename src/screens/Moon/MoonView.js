@@ -6,6 +6,8 @@ const MoonView = (props) => {
   const {} = props;
   return (
   <div className={styles._}>
+    <div className={styles.block}></div>
+    <div className={styles.light}></div>
     <IconMoon fill="#f7ca26" height={72} width={72} />
   </div>
   );
