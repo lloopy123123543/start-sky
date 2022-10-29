@@ -1,0 +1,42 @@
+._ {
+    height: 6px;
+    width: 6px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: star infinite 2s;
+    @keyframes star {
+        0% {
+            opacity: 1;
+            transform: scale(0.5);
+            box-shadow: 0px 0px 10px 5px yellow;
+        }
+
+        25% {
+            opacity: 0.75;
+            box-shadow: -1px -1px 7px 5px yellow;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        60% {
+            opacity: 0.25;
+            transform: scale(1);
+            box-shadow: 0px 2px 3px 5px yellow;
+        }
+
+        80% {
+            opacity: 0.5;
+            box-shadow: 2px 1px 7px 5px yellow;
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(0.5);
+            box-shadow: 0px 0px 10px 5px yellow;
+        }
+    }
+
+}
