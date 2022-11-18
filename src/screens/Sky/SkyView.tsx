@@ -2,8 +2,9 @@ import React, { Fragment } from "react";
 import { Moon } from "../Moon";
 import { Star } from "../Star";
 import styles from './Sky.module.scss';
+import { ISkyProps } from "./useSky";
 
-const SkyView = (props) => {
+const SkyView = (props: ISkyProps) => {
   const {stars, changeSky} = props;
 
   return (

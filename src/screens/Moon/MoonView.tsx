@@ -1,8 +1,10 @@
 import React, {Fragment} from "react";
 import styles from './Moon.module.scss';
 import {ReactComponent as IconMoon} from "../../icons/moon.svg"
+import { IMoonProps } from "./useMoon";
 
-const MoonView = (props) => {
+
+const MoonView = (props: IMoonProps) => {
   const {} = props;
   return (
   <div className={styles._}>
